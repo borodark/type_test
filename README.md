@@ -1,19 +1,7 @@
-# TypeTest
 
-> TODO: Add description**
+# TypeTest or type_test
+
+Demo project for ecto type patch for optional callback handles_nil?
+(https://github.com/borodark/ecto/tree/feature/dump_nil)[https://github.com/borodark/ecto/tree/feature/dump_nil]
 
 
-## Installation
-
-```elixir
-@deps [
-  type_test: "~> 0.1.0"
-]
-```
-
-## License
-
-> TODO: Add license
-
-----
-Created:  2017-09-13Z
