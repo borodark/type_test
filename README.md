@@ -1,10 +1,10 @@
 # Demo project for ecto type patch with optional callback handles_nil?
 https://github.com/borodark/ecto/tree/feature/dump_nil
 
-# Why change ecto this way?
-I had to work with a legacy database lately and among many idiosyncrasies of database design encountered one was particularly difficult to dodge.
-The timestamp column stores time as value of seconds starting from 1970-01-01 00:00:00.
-It is declared of type integer as following
+## Why change ecto this way?
+I had to work with a legacy database lately and among many idiosyncrasies of database design encountered the one was particularly difficult to dodge.
+The timestamp column stores time as value of seconds starting from 1970-01-01 00:00:00 in column declared as follows:
+
 `
 CREATE TABLE actions (
 ...
