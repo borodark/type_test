@@ -1,0 +1,3 @@
+defmodule TypeTest do
+
+end
