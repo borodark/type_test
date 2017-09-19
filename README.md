@@ -15,7 +15,7 @@ unix_time integer DEFAULT 0 );
 While `0` represents a valid date it's still the same as being `nil` from legacy applications point of view.
 
 The Ecto does not treat `nil` differently for any type of its own or custom types.
-The https://github.com/borodark/ecto/blob/master/lib/ecto/type.ex#L281 always produces `{:ok, nil}` for `nil`.
+The https://github.com/elixir-ecto/ecto/blob/master/lib/ecto/type.ex#L281 always produces `{:ok, nil}` for `nil`.
 
 The change allows custom type implementations to load, dump and cast any value of column into `nil` value in Ecto structure.
 
