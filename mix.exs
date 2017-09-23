@@ -7,7 +7,7 @@ defmodule TypeTest.Mixfile do
   @deps [
     {:mix_test_watch, github: "aforward/mix-test.watch", only: :dev, runtime: false},
     {:postgrex, "~> 0.13.2"},
-    {:ecto, path: "../ecto"},
+    {:ecto, git: "https://github.com/borodark/ecto.git", tag: "feature/dump_nil"},
     {:poison, "~> 3.1.0"},
     {:ex_doc, ">= 0.0.0", only: :dev}
   ]
@@ -24,7 +24,7 @@ defmodule TypeTest.Mixfile do
     [
       app:     @name,
       version: @version,
-      elixir:  ">= 1.5.1",
+      elixir:  "~> 1.4",
       deps:    @deps,
       aliases: @aliases,
       build_embedded:  in_production,
